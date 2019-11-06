@@ -1,0 +1,46 @@
+.user-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border:solid 1px rgb(204, 204, 204);
+}
+
+.user-wrap .user-info{
+    flex: 4;
+    border:solid 1px rgb(232, 232, 232);
+    border-bottom: none;
+}
+
+.user-info .user-avatar{
+    width: 100%;
+}
+.user-info .user-avatar img{
+    width: 125px;
+    height: 125px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+    border: solid 1px #ccc;
+}
+.user-info .user-data div{
+    text-align: center;
+    line-height: 40px;
+}
+
+.user-wrap .user-list{
+    flex: 8;
+}
+.user-list .ant-list{
+    border:solid 1px rgb(232, 232, 232);
+    border-top: none;
+}
+.user-list .ant-spin-container,.ant-list-header{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.user-list .ant-list-item h4 a{
+    line-height: 36px;
+}
+.user-list .ant-list-item-meta-avatar{
+    margin-right: 10px;
+}
