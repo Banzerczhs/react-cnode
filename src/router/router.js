@@ -6,6 +6,7 @@ import Book from "../view/book/book";
 import About from "../view/about/about";
 import Details from "../view/details/details";
 import User from "../view/user/user";
+import NotFind from "../view/notfind/notfind";
 
 class RouterControl extends React.Component{
     constructor(props){
@@ -24,6 +25,7 @@ class RouterControl extends React.Component{
                 <Route path="/about" component={About}></Route>
                 <Route path="/details/:id" component={Details}></Route>
                 <Route path="/user/:name" component={User}></Route>
+                <Route path="*" component={NotFind}></Route>
             </Switch>
         )
     }
