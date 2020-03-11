@@ -25,6 +25,8 @@ class RouterControl extends React.Component{
                 <Route path="/about" component={About}></Route>
                 <Route path="/details/:id" component={Details}></Route>
                 <Route path="/user/:name" component={User}></Route>
+                <Redirect from="/" to="/index/all" exact></Redirect>
+                <Redirect from="/:index" to="/index/all" exact></Redirect>
                 <Route path="*" component={NotFind}></Route>
             </Switch>
         )
