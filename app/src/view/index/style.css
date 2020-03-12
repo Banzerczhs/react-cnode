@@ -1,0 +1,99 @@
+.main{
+    width: 100%;
+    border: solid 1px rgb(204, 204, 204);
+}
+.main-wrap{
+    height: 100%;
+}
+.main-sider{
+    height: 100%;
+    border-right: solid 1px rgb(204, 204, 204);
+}
+.main .main-sider a{
+    text-align: center;
+}
+.main-sider .ant-menu-item{
+    padding: 0;
+}
+.main-sider .ant-menu-item a{
+    border-right: solid 3px transparent;
+}
+.main-sider .ant-menu-item-active a{
+    background-color: rgb(230, 247, 255);
+    border-right: solid 3px rgb(24, 144, 255);
+    color: rgb(24, 172, 255);
+}
+.main-sider .ant-menu-item a.active{
+    background-color: rgb(230, 247, 255);
+    border-right: solid 3px rgb(24, 144, 255);
+    color: rgb(24, 172, 255);
+}
+
+@media screen and (max-width:750px){
+    .main-sider{
+        width: 100%;
+        display: block;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+    .main-sider ul{
+        display: flex;
+        height: 100%;
+    }
+    .main-sider .ant-menu-item{
+        flex: 1;
+        border: none;
+        border-bottom: 2px solid transparent;
+        margin: 0!important;
+        line-height: 46px;
+        height: 100%;
+    }
+    .main-sider .ant-menu-item-active{
+        border-bottom: solid 2px rgb(24, 144, 255);
+    }
+    .main-sider .ant-menu-item-selected{
+        border-bottom: solid 2px rgb(24, 144, 255);
+    }
+}
+
+
+.main .main-content{
+    height: 100%;
+}
+.main-content .content-list{
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.content-list .ant-list-item-meta{
+    align-items: stretch;
+}
+.content-list .ant-list-item-meta-avatar{
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.content-list .ant-list-item-meta-title a{
+    font-size: 16px;
+}
+.content-list .ant-list-item-meta-description p{
+    word-spacing: 2px;
+}
+.content-list .ant-list-split .ant-list-item:last-child{
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.ant-list-item-action{
+    position: relative;
+}
+.ant-list-item-action .divider{
+    position: absolute;
+    height: 14px;
+    width: 1px;
+    right: 0px;
+    top: 4px;
+    background-color: #666;
+}
