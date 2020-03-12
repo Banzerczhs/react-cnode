@@ -2,6 +2,7 @@
   "name": "my_cnode",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pro.banzer.top/",
   "dependencies": {
     "antd": "^3.11.0",
     "axios": "^0.18.0",
